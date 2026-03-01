@@ -1,0 +1,14 @@
+Test Accuracy:  97.40%
+Precision:      97.47%
+Recall:         97.40%
+F1 Score:       97.41%
+
+              precision    recall  f1-score   support
+
+acne_rosacea       0.98      0.99      0.98        90
+      eczema       0.95      0.98      0.96        90
+    melanoma       1.00      0.96      0.98        89
+
+    accuracy                           0.97       269
+   macro avg       0.97      0.97      0.97       269
+weighted avg       0.97      0.97      0.97       269

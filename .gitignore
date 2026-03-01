@@ -1,0 +1,6 @@
+/unfiltered_dataset
+
+# Model artifacts
+*.pth
+*.pt
+*.ckpt

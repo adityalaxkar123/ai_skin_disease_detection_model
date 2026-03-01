@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+acne_rosacea       0.92      0.96      0.94        90
+      eczema       0.95      0.92      0.94        90
+    melanoma       0.97      0.97      0.97        89
+
+    accuracy                           0.95       269
+   macro avg       0.95      0.95      0.95       269
+weighted avg       0.95      0.95      0.95       269

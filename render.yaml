@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: skin-disease-ai
+    runtime: python
+    buildCommand: |
+      cd skin_ai_project && pip install -r requirements_gradio.txt
+    startCommand: |
+      cd skin_ai_project && python gradio_app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.10.12"
+      - key: GIT_LFS_ENABLED
+        value: "true"

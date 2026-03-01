@@ -1,5 +1,10 @@
 /unfiltered_dataset
 
+# Virtual environments
+.venv*/
+__pycache__/
+*.pyc
+
 # Model artifacts
 *.pth
 *.pt

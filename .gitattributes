@@ -1,0 +1,1 @@
+skin_ai_project/models/best_skin_model.pth filter=lfs diff=lfs merge=lfs -text

@@ -4,3 +4,6 @@
 *.pth
 *.pt
 *.ckpt
+
+# Keep this specific model tracked via Git LFS
+!skin_ai_project/models/best_skin_model.pth

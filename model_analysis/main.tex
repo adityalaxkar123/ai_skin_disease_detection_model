@@ -475,9 +475,26 @@ The trained model is deployed as an interactive web application using Gradio, su
 where $\Delta^{C-1}$ is the $(C{-}1)$-dimensional probability simplex. The predicted class is $\hat{c} = \arg\max_i \hat{p}_i$.
 
 %===================================================================
+%===================================================================
+\section{Future Work}
+%===================================================================
+
+We identify several directions to extend and strengthen this work:
+
+\begin{itemize}
+    \item \textbf{Expanded taxonomy:} Increase the number of labelled dermatological conditions (including rare classes) to move toward clinically comprehensive coverage.
+    \item \textbf{Larger, diverse datasets:} Curate multi-center datasets encompassing varied skin tones, imaging devices, and lighting conditions to reduce domain shift.
+    \item \textbf{Prospective external validation:} Conduct multi-site prospective studies and reader studies with dermatologists to evaluate clinical utility and robustness.
+    \item \textbf{Explainability and trust:} Integrate saliency methods such as Grad-CAM and perform clinician-in-the-loop evaluations to improve interpretability and trust.
+    \item \textbf{Semi-supervised and active learning:} Leverage unlabeled data and active annotation strategies to improve performance on underrepresented classes.
+    \item \textbf{Calibration and uncertainty:} Investigate temperature scaling, deep ensembles, and Bayesian approximations for reliable confidence estimates in deployment.
+    \item \textbf{Edge optimization and privacy:} Apply model compression, quantization, and knowledge distillation for on-device inference; explore federated learning for privacy-preserving training.
+\end{itemize}
+
+%===================================================================
 \section{Conclusion}
 %===================================================================
 
-This paper presented a complete analysis of an AI-based skin disease detection system using EfficientNetV2-B2. The model achieves \textbf{97.40\% test accuracy} with strong per-class performance across Acne \& Rosacea (F1=0.98), Eczema (F1=0.96), and Melanoma (F1=0.98). The combination of rigorous data cleaning, aggressive augmentation, transfer learning, label smoothing, cosine annealing, and early stopping produces a well-generalized model suitable for clinical decision support. Future work will expand the disease taxonomy, incorporate larger and more diverse datasets, and explore explainability methods such as Grad-CAM for enhanced clinical trust.
+This paper presented a complete analysis of an AI-based skin disease detection system using EfficientNetV2-B2. The model achieves \textbf{97.40\% test accuracy} with strong per-class performance across Acne \& Rosacea (F1=0.98), Eczema (F1=0.96), and Melanoma (F1=0.98). The combination of rigorous data cleaning, aggressive augmentation, transfer learning, label smoothing, cosine annealing, and early stopping produces a well-generalized model suitable for clinical decision support. These results indicate promising potential for clinical assistance pending further external validation and expanded disease coverage.
 
 \end{document}
